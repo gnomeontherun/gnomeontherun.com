@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-8">
+            <div class="category-list">
+                <p>Published <span>{{ page.date | date: "%b %-d, %Y" }}</span></p>
+                <p>in {% for category in page.categories %}
+                    <a href='{{ "/category/" | append: page.categories.first | prepend: site.baseurl }}'>{{ category | capitalize }}</a>
+                    {% if forloop.last %}{% else %},{% endif %}
+                {% endfor %}
+                </p>
+            </div>
+        </div><!-- end col -->
+        <div class="col-xs-12 col-sm-4">
+            <div class="social">
+                <p>Share this article</a>
+                <div class="social-links">
+                    <a class="social-icon" href="#" data-platform="twitter" data-message="{{ page.social-message }}" data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"><i class="fa fa-twitter"></i></a>
+                    <a class="social-icon" href="#" data-platform="facebook" data-message="{{ page.social-message }}" data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"><i class="fa fa-facebook-official"></i></a>
+                    <a class="social-icon" data-platform="mail"  href="mailto:{{ site.email }}?body={{ page.url | prepend: site.baseurl | prepend: site.url }}"><i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </div><!-- end row -->
+</div>
