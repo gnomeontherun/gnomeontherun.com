@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2015-08-18
-title: "Breaking bread as a team"
+title: "A team that eats together, works together"
 categories: work
 read_time : 10
 feature_image: categories/work-feature
