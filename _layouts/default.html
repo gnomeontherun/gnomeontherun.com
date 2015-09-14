@@ -3,18 +3,23 @@
 
   {% include head.html %}
 
-  <body class="{% if page.bodyclass %}{{ page.bodyclass }}{% endif %}">
+  <body>
+
+    <section class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">{{site.title}}</a>
+        </div>
+        <ul class="nav navbar navbar-right">
+            {% for page in site.nav_list %}
+                <li><a href="{{ page[1][1] | prepend: site.baseurl }}">{{ page[1][0] }}</a></li>
+            {% endfor %}
+        </ul>
+      </div>
+    </section><!-- end sidebar -->
 
     {{ content }}
 
-    <script src='{{ "/js/vendor/modernizr.custom.32229-2.8-respondjs-1-4-2.js" | prepend: site.baseurl }}'></script>
-    <script src="{{'/js/vendor/jquery-1.11.2.min.js' | prepend: site.baseurl }}"></script>
-    <script src='{{ "/js/vendor/jquery.jpanelmenu.min.js" | prepend: site.baseurl }}'></script>
-    <script type='application/javascript' src='{{ "/js/vendor/fastclick.min.js" | prepend: site.baseurl }}'></script>
-    {% if enable_retina %}
-    <script type='application/javascript' src='{{ "/js/vendor/retina.min.js" | prepend: site.baseurl }}'></script>
-    {% endif %}
-    <script src=' {{ "/js/main.js" | prepend: site.baseurl }}'></script>
   </body>
 
 </html>

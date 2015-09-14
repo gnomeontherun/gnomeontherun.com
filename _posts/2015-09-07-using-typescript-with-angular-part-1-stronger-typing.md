@@ -1,8 +1,8 @@
 ---
 layout: post
 date: 2015-09-07
-title: "Should you use TypeScript with Angular, Part 1"
-categories: javascript, angular
+title: "Using TypeScript with Angular Part 1: Stronger Typing"
+categories: javascript angular
 read_time : 10
 feature_image: categories/work-feature
 show_related_posts: false

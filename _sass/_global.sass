@@ -1,4 +1,4 @@
-// vendor
+
 @import "vendor/bootstrap.min"
 @import "vendor/font-awesome.min"
 
@@ -63,12 +63,40 @@ main
 
 
 a
-    color: #999999
+    color: #666666
     text-decoration: none
+    border-bottom: 1px solid #666
 
     &:hover,
     &:active,
     &:focus
         text-decoration: none
         color: #333
-        border-bottom: solid 1px #999
+        border-bottom: solid 1px #333
+
+// Customizations
+
+.navbar
+    margin-bottom: 0
+
+    a
+        border: 0
+
+    li
+        float: left
+
+.home-page-categories
+    ul > li
+        list-style: none
+
+.split-footer
+    border-top: 1px solid #eee
+
+.meta a
+    border-bottom: 1px solid #b6b6b6
+
+    &:hover, &:active, &:focus
+        border-bottom: 1px solid #333
+
+.center
+    text-align: center

@@ -1,13 +1,14 @@
 # Site settings
-title: Gnome on the run - Jeremy Wilken
+title: Gnome on the run
 description: JavaScript, usability, and the quest for purpose
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://gnomeontherun.com" # the base hostname & protocol for your site
 enable_retina: false
 permalink: :year/:month/:title
 nav_list:
-  Home : ['Home', '/', 'fa-home']
-  About : ['About', '/about', 'fa-anchor']
+  Home : ['Home', '/']
+  Categories : ['Categories', '/categories']
+  About : ['About', '/about']
 single_footer: '<p>&copy; 2015 Jeremy Wilken.</p>'
 footer_links:
     About: ['About', '/about']
