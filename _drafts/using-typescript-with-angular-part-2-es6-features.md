@@ -4,6 +4,7 @@ date: 2015-09-07
 title: "Using TypeScript with Angular Part 2: ES6+ Features"
 categories: javascript angular
 read_time : 10
+draft: true
 feature_image: categories/work-feature
 show_related_posts: false
 ---
