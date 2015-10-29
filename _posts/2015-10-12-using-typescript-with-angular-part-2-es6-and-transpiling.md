@@ -8,7 +8,7 @@ feature_image: categories/work-feature
 show_related_posts: false
 ---
 
-[TypeScript](typescriptlang.org) converts the source code to JavaScript so it can execute in the browser. Let's take a look at how TypeScript . This is Part 2 of a series covering TypeScript and Angular 1 & 2.
+[TypeScript](typescriptlang.org) converts the source code to JavaScript so it can execute in the browser. Let's take a look at how TypeScript uses ES6 and transpiles to JavaScript. This is Part 2 of a series covering TypeScript and Angular 1 & 2.
 
 ## TypeScript for ES6
 
@@ -30,3 +30,8 @@ If the code passes the type validation, then TypeScript will remove any typing i
 
 * Angular 2 is also written in TypeScript, which means anytime you use an Angular 2 feature TypeScript will know if you are passing the correct types of values.
 * TypeScript enhances IDEs since they can inspect the source and understand more about the expectations of code, and suggest to you what values are acceptable.
+
+## TypeScript Series
+
+* [Using TypeScript with Angular Part 1: Stronger Typing]({% post_url 2015-09-07-using-typescript-with-angular-part-1-stronger-typing %})
+* [Using TypeScript with Angular Part 3: IDE Support]({% post_url 2015-10-29-using-typescript-with-angular-part-3-ide-support %})

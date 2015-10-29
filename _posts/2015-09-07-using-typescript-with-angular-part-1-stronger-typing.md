@@ -53,10 +53,7 @@ TypeScript interfaces can describe an object (or a function, or a class, or anyt
 
 Here we don't have to write the `if` statement, because TypeScript will check the presence and type of the properties. Many lines of JavaScript written don't properly check if an object property exists before using it, causing many `undefined` errors.
 
-## Coming up in future posts
+## TypeScript Series
 
-There are many other features and ways to look at types. I'll go into more detail about several other features and use cases for TypeScript.
-
-* TypeScript is an ES6 transpiler as well, allowing you to leverage ES6 features today. You might use it just for ES6 support.
-* Angular 2 is also written in TypeScript, which means anytime you use an Angular 2 feature TypeScript will know if you are passing the correct types of values.
-* TypeScript enhances IDEs since they can inspect the source and understand more about the expectations of code, and suggest to you what values are acceptable.
+* [Using TypeScript with Angular Part 2: ES6 and Transpiling]({% post_url 2015-10-12-using-typescript-with-angular-part-2-es6-and-transpiling %})
+* [Using TypeScript with Angular Part 3: IDE Support]({% post_url 2015-10-29-using-typescript-with-angular-part-3-ide-support %})
