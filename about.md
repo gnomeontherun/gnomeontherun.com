@@ -17,6 +17,7 @@ You can follow me on Twitter [@gnomeontherun](https://twitter.com/gnomeontherun)
 
 ## Presentations
 
+* March 2015 - [Building an Angular 2 App with TypeScript and ES6](http://conferences.oreilly.com/fluent/fluent-javascript-html-ca/public/schedule/detail/46503) - at FluentConf in San Francisco
 * November 2015 - [Hybrid Mobile Apps with Ionic and Angular](http://www.meetup.com/AngularJS/events/224925897/) at AngularJS Meetup in Austin
 * August 2015 - [Building an Angular 2 app with TypeScript](http://www.meetup.com/AngularJS/events/224748092/) at AngularJS Meetup in Austin
 * May 2014 - [Building Web Components Today](http://www.meetup.com/houston-js/events/181726492/) at HoustonJS
