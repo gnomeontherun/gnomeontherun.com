@@ -24,4 +24,6 @@ paginate: 10
 paginate_path: "/posts/:num/"
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
-gems: [jekyll-paginate]
+gems: 
+  - jekyll-paginate
+  - jekyll-feed

@@ -5,29 +5,11 @@ description: "Learn the essential skills for Angular (version 2+) with an exampl
 header-img: "img/angular-in-action-bg.jpg"
 ---
 
-## You want to learn how to build feature rich mobile apps?
+## Covers Angular 2 and above
 
 <a href="https://www.manning.com/books/angular-in-action?a_aid=gnomeontherun"><img width="150" style="float: left; margin: 0 10px 0 0" src="https://images.manning.com/255/340/resize/book/e/eba4012-ede5-4d90-8c14-41eedb050e99/Wilken-Angular-MEAP-HI.png" /></a>
       
-_Angular in Action_ is the guide you need to learn about the entire stack of tools and technologies used to create production quality mobile apps.
-
-In the book you will build several feature rich example applications, and in the process learn about Ionic's many components and services. The book covers:
-
-* Getting your local development environment setup.
-* An AngularJS primer to get you up to speed on Angular concepts fast.
-* Hands on examples for nearly all of Ionic's components, such as:
-    * Navigational components such as navbars, tabs, and side menus
-    * Content containers with pull to refresh and infinite scroll
-    * Form elements, inputs, range sliders, togglers
-    * Popups, popovers, modals, action sheets and other interactive elements
-    * Slideshows and custom scrollers
-    * Icons, spinners, and loading indicators
-* How to use Cordova to access the device platform features (such as GPS or camera).
-* Advanced techniques for professional apps.
-* How to leverage external data from RESTful APIs in mobile apps.
-* Testing strategies and tools for Angular and mobile apps.
-
-The book is hands-on oriented in providing quality examples that are similar to production quality apps, but also keeping the examples clear and focused on helping you learn.
+_Angular in Action_ teaches you modern application development with Angular. You'll begin with the basics of Angular and the technologies and techniques you'll use throughout the book, such as key features of TypeScript, newer ES6 syntax and concepts, and details about the tools needed to write professional Angular applications. Next, you'll build an Angular application from scratch. You'll learn about the primary pieces of an Angular application and see how they work together. Using lots of examples, you'll learn the core parts of Angular, such as Components, the Router, and Services. You'll also learn techniques like server-side rendering. Finally, you'll gain insight into advanced skills that should be part of any professional Angular developer's toolkit, such as testing, tooling options, and performance tuning.
     
 ## How to get it
 
