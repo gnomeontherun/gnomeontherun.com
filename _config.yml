@@ -1,20 +1,27 @@
 # Site settings
 title: Gnome on the run
-description: JavaScript, usability, and the quest for purpose
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://gnomeontherun.com" # the base hostname & protocol for your site
-enable_retina: false
-permalink: :year/:month/:title
-nav_list:
-  Home : ['Home', '/']
-  Categories : ['Categories', '/categories']
-  About : ['About', '/about']
-single_footer: '<p>&copy; 2015 Jeremy Wilken.</p>'
-footer_links:
-    About: ['About', '/about']
-    Github: ['GitHub', 'https://github.com/gnomeontherun']
-    Twitter: ['Twitter', 'https://twitter.com/gnomeontherun']
-    Ionic: ['Ionic in Action', 'http://ionicinaction.com']
+header-img: img/home-bg.jpg
+email: gnomation@gnomeontherun.com
+copyright_name: Jeremy Wilken
+description: "Write your site description here. It will be used as your sites meta description as well!"
+baseurl: ""
+url: "http://gnomeontherun.com"
+twitter_username: gnomeontherun
+github_username:  gnomeontherun
+author: Jeremy Wilken
+#facebook_username:  StartBootstrap
+#email_username:  your-email@yourdomain.com
+
+# Google Analytics
+# To enable google analytics, uncomment below line with a valid Google Tracking ID
+google_tracking_id: UA-1324142-11
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 10
+paginate_path: "/posts/:num/"
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate]

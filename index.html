@@ -1,5 +1,46 @@
 ---
-layout: home
-title: Gnome on the run
-desc: Musings, stories, and tech writing by Jeremy Wilken
+layout: page
+description: By Jeremy Wilken
 ---
+
+{% for post in paginator.posts %}
+<div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <h2 class="post-title">            {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+    </a>
+    <p class="post-meta">Posted on {{ post.date | date: "%B %-d, %Y" }}</p>
+</div>
+<hr>
+{% endfor %}
+
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+  {% if paginator.previous_page %}
+    <li class="previous"><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a></li>
+  {% else %}
+    <li class="previous disabled"><span>&laquo; Prev</span></li>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <li class="active"><span>{{ page }}</span></li>
+    {% elsif page == 1 %}
+      <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+    {% else %}
+      <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <li class="next"><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
+  {% else %}
+    <li class="next disabled"><span>Next &raquo;</span></li>
+  {% endif %}
+</div>
+{% endif %}

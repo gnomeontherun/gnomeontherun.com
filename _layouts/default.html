@@ -1,25 +1,18 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="en">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<body>
 
-    <section class="navbar navbar-inverse navbar-static-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="/">{{site.title}}</a>
-        </div>
-        <ul class="nav navbar navbar-right">
-            {% for page in site.nav_list %}
-                <li><a href="{{ page[1][1] | prepend: site.baseurl }}">{{ page[1][0] }}</a></li>
-            {% endfor %}
-        </ul>
-      </div>
-    </section><!-- end sidebar -->
+    {% include nav.html %}
 
     {{ content }}
 
-  </body>
+    {% include footer.html %}
+
+    {% include ga.html %}
+
+</body>
 
 </html>
